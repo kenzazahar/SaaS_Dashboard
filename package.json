@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-ui-pro-template-saas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck",
+    "electron-dev": "concurrently \"pnpm dev\" \"wait-on http://localhost:3000 && electron electron/main.js\"",
+    "electron-build": "nuxt generate && electron-builder"
+  },
+  "dependencies": {
+    "@iconify-json/heroicons": "^1.1.24",
+    "@iconify-json/simple-icons": "^1.1.114",
+    "@nuxt/content": "^2.13.2",
+    "@nuxt/fonts": "^0.7.2",
+    "@nuxt/image": "^1.7.0",
+    "@nuxt/ui-pro": "^1.4.1",
+    "@unovis/ts": "^1.4.4",
+    "@unovis/vue": "^1.4.4",
+    "@vueuse/nuxt": "^10.11.1",
+    "date-fns": "^3.6.0",
+    "nuxt": "^3.12.4",
+    "nuxt-og-image": "^3.0.0-rc.65",
+    "v-calendar": "^3.1.2"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.1",
+    "@nuxthq/studio": "^2.0.3",
+    "concurrently": "^8.2.2",
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3",
+    "eslint": "^9.9.0",
+    "nuxt-electron": "^0.7.0",
+    "vite-plugin-electron": "^0.28.7",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "vue-tsc": "^2.0.29",
+    "wait-on": "^8.0.0"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
+}
