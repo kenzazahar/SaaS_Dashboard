@@ -71,7 +71,7 @@ function onSubmit(data: any) {
 
       <template #footer>
         By signing in, you agree to our <NuxtLink
-          to="/"
+          to="/indexdashboard"
           class="text-primary font-medium"
         >Terms of Service</NuxtLink>.
       </template>
